@@ -6,6 +6,21 @@ import { ExternalLink, Github, Calendar, Users, TrendingUp } from "lucide-react"
 const Projects = () => {
   const projects = [
     {
+      title: "AI-Powered Mental Wellness Platform",
+      description: "Built a video-based therapy system with 3D avatar psychologists, multilingual support, and real-time emotion detection. Delivered scalable microservices with WebSockets, AI-driven adaptive therapy, and secure crisis intervention protocols.",
+      date: "Sep 2025",
+      tech: ["React", "Django", "FastAPI", "PostgreSQL", "Google Gemini AI"],
+      highlights: [
+        "Video-based therapy with 3D avatar psychologists",
+        "Multilingual support and real-time emotion detection",
+        "Scalable microservices with WebSockets",
+        "AI-driven adaptive therapy and secure crisis intervention"
+      ],
+      icon: <TrendingUp className="w-6 h-6" />,
+      github: "https://github.com/NISHAKAR06/Mental_Wellness_AI",
+      demo: "https://mentalwellnessai.vercel.app/"
+    },
+    {
       title: "ExitEase – Chatbot Based Outpass Generator",
       description: "Intelligent outpass management system with role-based approvals, real-time tracking, and YOLO-based ID verification achieving 95% accuracy. Reduced approval time by 60%.",
       date: "Jun 2025",
@@ -17,20 +32,6 @@ const Projects = () => {
       ],
       icon: <Users className="w-6 h-6" />,
       github: "https://github.com/GopikaArumugam/op_gen",
-      demo: "#"
-    },
-    {
-      title: "2025 IPL Prediction",
-      description: "Comprehensive EDA on 17 years of IPL data with ensemble modeling for match winner prediction. Interactive visualizations of team and player performance using Plotly.",
-      date: "Mar 2025", 
-      tech: ["Python", "Pandas", "Scikit-learn", "Plotly", "EDA", "Ensemble Methods"],
-      highlights: [
-        "17 years of IPL data analysis",
-        "Ensemble model predictions",
-        "Interactive Plotly visualizations"
-      ],
-      icon: <TrendingUp className="w-6 h-6" />,
-      github: "https://github.com/Nehasasikumar/IPL_Prediction_2025",
       demo: "#"
     },
     {

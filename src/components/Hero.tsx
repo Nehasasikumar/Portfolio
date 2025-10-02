@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@/assets/neha-profile.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -18,14 +17,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="fade-in">
-          {/* Profile Image */}
-          <div className="mb-8 relative z-20">
-            <img 
-              src={profileImage} 
-              alt="Neha S" 
-              className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-lg"
-            />
-          </div>
+
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">

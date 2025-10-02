@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm('service_5ew8aof', 'template_5jsbgor', form.current, 'Ydg3w5XXkdvlS-77F')
         .then((result) => {
             console.log(result.text);
             toast({
@@ -98,14 +98,14 @@ const Contact = () => {
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <Card className="card-hover slide-up">
+            <Card className="card-hover slide-up h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-primary" />
                   Contact Information
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 flex-1">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="p-2 bg-primary/10 rounded-lg">
@@ -157,11 +157,11 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="card-hover slide-up">
+            <Card className="card-hover slide-up h-full flex flex-col">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1">
                 <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">

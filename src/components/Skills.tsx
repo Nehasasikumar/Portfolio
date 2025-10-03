@@ -224,34 +224,6 @@ const Skills = () => {
             </Card>
           ))}
         </div>
-
-        {/* Additional Skills Badges */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8">Other Technologies</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "Docker", icon: Container },
-              { name: "AWS", icon: Cloud },
-              { name: "Firebase", icon: Flame },
-              { name: "Plotly", icon: TrendingUp },
-              { name: "Matplotlib", icon: BarChart3 },
-              { name: "Jupyter", icon: BookOpen },
-              { name: "Linux", icon: Monitor },
-              { name: "Postman", icon: Package },
-              { name: "Redux", icon: RotateCcw },
-              { name: "Bootstrap", icon: Brush }
-            ].map((tech, index) => (
-              <Badge 
-                key={index} 
-                variant="secondary" 
-                className="px-4 py-2 text-sm flex items-center gap-2 hover:scale-105 transition-transform"
-              >
-                <tech.icon className="w-4 h-4" />
-                {tech.name}
-              </Badge>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ const Hero = () => {
             <Button
               size="lg"
               className="px-8 py-3 text-lg"
-              onClick={() => window.open('/NEHA_S_RESUME.pdf', '_blank')}
+              onClick={() => window.open('/NEHA-S-Resume.pdf', '_blank')}
             >
               View Resume
             </Button>
